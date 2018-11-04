@@ -4,6 +4,7 @@
     <h1>Edit Task</h1>
     <hr>
      <form action="{{url('tasks', [$task->id])}}" method="POST">
+      
      <input type="hidden" name="_method" value="PUT">
      {{ csrf_field() }}
       <div class="form-group">

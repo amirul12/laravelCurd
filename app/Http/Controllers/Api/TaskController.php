@@ -1,13 +1,14 @@
-<!-- <?php
+<?php
 
-namespace App\Http\Controllers;
-
+namespace App\Http\Controllers\Api;
 use App\Task;
+
 use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
 
 class TaskController extends Controller
 {
-    /**
+/**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
@@ -17,10 +18,10 @@ class TaskController extends Controller
         //
 
         $tasks = Task::all();
-        return response()->json($tasks);
 
-       // return view('layout.tasks.index',compact('tasks'));
+        return response()->json($tasks);
     }
+
 
      public function create()
     {
@@ -77,3 +78,4 @@ class TaskController extends Controller
     }
 }
 
+    

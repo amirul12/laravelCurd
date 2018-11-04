@@ -2,11 +2,10 @@
 
 @section('content')
 
-
     <section class="jumbotron text-center">
      <div class="content">
-      
-    <h1>Add New Task</h1>
+
+    <h1>Add New Task</h1>  
     <hr>
      <form action="/tasks" method="post">
      {{ csrf_field() }}
